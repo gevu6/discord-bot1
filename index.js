@@ -22,10 +22,9 @@ client.on('messageCreate', async (message) => {
   if (message.attachments.size > 0) {
     console.log('Зображення знайдено!');
     try {
-      // Додаємо регіональний індикатор "W"
-      await message.react('<:win:1370773118767075531');  // додаємо символ "W"
-      await message.react('<:lose:1370737479090700408'); 
-      await message.react('<:kakashka:1370736094638772234') 
+      await message.react('<:win:1370773118767075531>'); 
+      await message.react('<:lose:1370737479090700408>'); 
+      await message.react('<:kakashka:1370736094638772234>'); 
     } catch (error) {
       console.error('Не вдалося поставити реакції:', error);
     }
